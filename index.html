@@ -1,0 +1,64 @@
+<head>
+<title>Click the Pizza!</title>
+<style>
+body{
+    text-align: center;
+    background-color: cornflowerblue;
+    user-select: none;
+}
+
+h1 {
+font-size: 50px;
+color: black;
+margin-top: 20px;
+}
+
+h2{
+font-size: 40px;
+color: black;
+margin-top: 70px;
+
+}
+
+.pizzaStuff{
+    position: relative;
+    display: inline-block;
+}
+
+#pizza{
+    width: 200px;
+    height: auto;
+    margin-top: 70px;
+}
+
+#pizza:active {
+    transform: scale(0.9);
+
+}
+#target{
+    position:absolute;
+    width: 30px;
+    height: auto;
+    opacity: 0.8;
+    cursor: pointer;
+    top:100px;
+    left:100px;
+}
+</style>
+</head>
+<body>
+    <h1>Click the Pizza!</h1>
+<div class="pizzaStuff">
+<img id="pizza" src=images/pizza.png>
+<img id="target" src=images/combo.png>
+</div>
+
+
+
+<h2>Pizzas: <span id="score">0</span></h2>
+<h3>Combo: <span id="combo">0</span>x (Multiplier: <span id="multiplier">1</span>x)</h3>
+
+
+<script src="main.js"></script>
+</body>
+
